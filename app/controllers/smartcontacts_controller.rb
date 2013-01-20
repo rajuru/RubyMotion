@@ -4,7 +4,7 @@ class SmartContactsController < UIViewController
 
     self.view.backgroundColor = UIColor.whiteColor
     @label = UILabel.alloc.initWithFrame(CGRectZero)
-    @label.text = "শুভ জন্মদিন"
+    @label.text = "Colors"
     @label.sizeToFit
     @label.center = [
       self.view.frame.size.width / 2,
@@ -12,7 +12,7 @@ class SmartContactsController < UIViewController
     ]
     @label.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin
     self.view.addSubview(@label)
-    self.title = "প্রজন্ম ফোরাম"
+    self.title = "Colors"
 
     ["red", "green", "blue"].each_with_index do |color_text, index|
       color = UIColor.send("#{color_text}Color")
